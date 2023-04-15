@@ -1,0 +1,12 @@
+.card {
+    width: 20rem;
+}
+
+.left {
+    text-align: left;
+}
+
+.right {
+    text-align: right;
+    transform: skew(5deg, 3deg);
+}
