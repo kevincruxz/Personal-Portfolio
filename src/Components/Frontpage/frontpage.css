@@ -9,7 +9,7 @@
     position: relative;
 }
 
-svg {
+.frontpage svg {
     position: absolute;
     bottom: 0;
     left: 0;

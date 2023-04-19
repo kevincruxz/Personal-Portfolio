@@ -1,0 +1,86 @@
+.project-square {
+    background: url(../../../public/img/projects-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 25%;
+    min-height: 14rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    position: relative;
+    transition: 1.5s;
+    z-index: 1;
+}
+
+.project-square h2 {
+    color: white;
+}
+
+.project-square h3 {
+    color: white;
+}
+
+.project-square:hover {
+    transform: scale(1.5);
+    z-index: 2;
+    animation: showPreview 15s ease-in 2s;
+    animation-fill-mode: forwards;
+}
+
+.project-square.wedding:hover {
+    transform: scale(1.5);
+    margin-left: 5rem;
+    z-index: 2;
+}
+
+.project-square.calculator:hover {
+    transform: scale(1.5);
+    margin-right: 5rem;
+    z-index: 2;
+}
+
+.project-square:hover h3, .project-square:hover h2 {
+    animation: moveDown 15s ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveDown {
+    from {
+        position: absolute;
+    }
+    10% {
+        bottom: 5rem;
+    }
+    50% {
+        bottom: 1rem;
+        color: yellow;
+    }
+    to {
+        bottom: 1rem;
+    }
+}
+
+@keyframes showPreview {
+    5% {
+        background: black;
+    }
+    40% {
+        background: url(../../../public/img/arrow-gif.gif);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    50% {
+        background: black;
+    }
+    60% {
+        background: url(../../../public/img/tecleoCompuDos.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
+
