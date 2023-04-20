@@ -1,5 +1,4 @@
 .project-square {
-    background: url(../../../public/img/projects-bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -15,6 +14,15 @@
     z-index: 1;
 }
 
+a {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%;
+    min-height: 14rem;
+    position: absolute;
+}
+
 .project-square h2 {
     color: white;
 }
@@ -23,18 +31,52 @@
     color: white;
 }
 
-.project-square:hover {
-    transform: scale(1.5);
-    z-index: 2;
-    animation: showPreview 15s ease-in 2s;
-    animation-fill-mode: forwards;
+.project-square.wedding {
+    background: url(../../../public/img/portada1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.project-square.etch-a-sketch {
+    background: url(../../../public/img/portada2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.project-square.calculator {
+    background: url(../../../public/img/portada3.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .project-square.wedding:hover {
+    background: url(../../../public/img/project-wedding.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     transform: scale(1.5);
     margin-left: 5rem;
     z-index: 2;
 }
+
+.project-square.etch-a-sketch:hover {
+    background: url(../../../public/img/project-etch-a-sketch.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.5);
+}
+
+.project-square.calculator:hover {
+    background: url(../../../public/img/project-calculator.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 
 .project-square.calculator:hover {
     transform: scale(1.5);
@@ -43,44 +85,18 @@
 }
 
 .project-square:hover h3, .project-square:hover h2 {
-    animation: moveDown 15s ease-in;
-    animation-fill-mode: forwards;
+    opacity: 0;
 }
 
-@keyframes moveDown {
-    from {
-        position: absolute;
-    }
-    10% {
-        bottom: 5rem;
-    }
-    50% {
-        bottom: 1rem;
-        color: yellow;
-    }
-    to {
-        bottom: 1rem;
-    }
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
 }
 
-@keyframes showPreview {
-    5% {
-        background: black;
-    }
-    40% {
-        background: url(../../../public/img/arrow-gif.gif);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    50% {
-        background: black;
-    }
-    60% {
-        background: url(../../../public/img/tecleoCompuDos.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
 

@@ -11,7 +11,7 @@ export const Projects = () => {
 
             <div className="scheme">
                 <ProjectSquare project='wedding' name='Wedding Invitation' subtitle='(real usage)'/>
-                <ProjectSquare project='etch-a-sketch' name='Etch - a - Sketch'/>
+                <ProjectSquare project='etch-a-sketch' name='Etch - a - Sketch' link='https://kevincruxz.github.io/etch-a-sketch/' />
                 <ProjectSquare project='calculator' name='Calculator'/>
                 <ProjectSquare project='ssc' name='SSC (Online Game)'/>
                 <ProjectSquare project='hangman' name='hangman'/>
