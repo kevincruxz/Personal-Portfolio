@@ -18,6 +18,14 @@
     background: linear-gradient(to right, black 50%, transparent 0);
     background-size: 200% 100%;
     background-position: right;
+    transition: 0.8s;
+}
+
+.right-direction .measure {
+    background: linear-gradient(to left, black 50%, transparent 0);
+    background-size: 200% 100%;
+    background-position: left;
+    transition: 0.8s;
 }
 
 .left-direction .branding{
