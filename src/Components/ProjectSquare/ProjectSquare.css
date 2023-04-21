@@ -1,7 +1,4 @@
 .project-square {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     width: 25%;
     min-height: 14rem;
     display: flex;
@@ -14,7 +11,7 @@
     z-index: 1;
 }
 
-a {
+.project-square a {
     color: white;
     cursor: pointer;
     text-decoration: none;
@@ -23,65 +20,65 @@ a {
     position: absolute;
 }
 
-.project-square h2 {
+.project-square h2, .project-square h3 {
     color: white;
 }
 
-.project-square h3 {
-    color: white;
+.project-square.wedding, .project-square.etch-a-sketch, .project-square.calculator, .project-square.ssc, .project-square.hangman {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.project-square.wedding {
+.wedding {
     background: url(../../../public/img/portada1.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
-.project-square.etch-a-sketch {
+.etch-a-sketch {
     background: url(../../../public/img/portada2.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
-.project-square.calculator {
+.calculator {
     background: url(../../../public/img/portada3.PNG);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
-.project-square.wedding:hover {
-    background: url(../../../public/img/project-wedding.gif);
+.ssc {
+    background: url(../../../public/img/portada4.PNG);
+}
+
+.hangman {
+    background: url(../../../public/img/portada5.PNG);
+}
+
+.project-square.wedding:hover, .project-square.etch-a-sketch:hover, .project-square.calculator:hover, .project-square.ssc:hover, .project-square.hangman:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transform: scale(1.5);
+    transform: scale(1.4);
+}
+
+.wedding:hover {
+    background: url(../../../public/img/project-wedding.gif);
     margin-left: 5rem;
     z-index: 2;
 }
 
-.project-square.etch-a-sketch:hover {
+.etch-a-sketch:hover {
     background: url(../../../public/img/project-etch-a-sketch.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    transform: scale(1.5);
 }
 
-.project-square.calculator:hover {
+.calculator:hover {
     background: url(../../../public/img/project-calculator.gif);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-
-.project-square.calculator:hover {
-    transform: scale(1.5);
     margin-right: 5rem;
     z-index: 2;
+}
+
+.ssc:hover {
+    background: url(../../../public/img/project-ssc.gif);
+}
+
+.hangman:hover {
+    background: url(../../../public/img/project-hangman.gif);
 }
 
 .project-square:hover h3, .project-square:hover h2 {

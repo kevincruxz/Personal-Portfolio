@@ -20,7 +20,7 @@ export const ProjectSquare = (props) => {
 
     const isWedding = () => {
         if (props.project !== 'wedding') {
-            return <a href={props.link} />
+            return <a href={props.link} target='blank' />
         }
     }
 
