@@ -1,0 +1,14 @@
+.form {
+    min-height: 80vh;
+    width: 100%;
+    margin-top: 15rem;
+    background-color: #3586ff;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    gap: 5vh;
+    padding-bottom: 30vh;
+}
