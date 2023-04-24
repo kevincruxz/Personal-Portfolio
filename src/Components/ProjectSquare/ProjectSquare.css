@@ -12,16 +12,11 @@
 }
 
 .project-square a {
-    color: white;
     cursor: pointer;
     text-decoration: none;
     width: 100%;
     min-height: 14rem;
     position: absolute;
-}
-
-.project-square h2, .project-square h3 {
-    color: white;
 }
 
 .project-square.wedding, .project-square.etch-a-sketch, .project-square.calculator, .project-square.ssc, .project-square.hangman {
@@ -32,6 +27,7 @@
 
 .wedding {
     background: url(../../../public/img/portada1.png);
+    color: white;
 }
 
 .etch-a-sketch {
@@ -40,6 +36,7 @@
 
 .calculator {
     background: url(../../../public/img/portada3.PNG);
+    color: white;
 }
 
 .ssc {
@@ -48,6 +45,7 @@
 
 .hangman {
     background: url(../../../public/img/portada5.PNG);
+    color: white;
 }
 
 .project-square.wedding:hover, .project-square.etch-a-sketch:hover, .project-square.calculator:hover, .project-square.ssc:hover, .project-square.hangman:hover {

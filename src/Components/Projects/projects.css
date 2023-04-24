@@ -2,7 +2,7 @@
     width: 100%;
     min-height: 80%;
     background-color: aqua;
-    border-top: solid 2px red;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .projects-section-header {

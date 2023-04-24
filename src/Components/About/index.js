@@ -16,11 +16,15 @@ export const About = () => {
         <div className='about-section'>
             <Navbar />
 
+            <div className='typing-animation'>
+                
+            </div>
+
             <div className='first-p cards animate__animated'>
                 <AboutCard side='left' paragraph={1}/>
             </div>
 
-            <iframe src="https://giphy.com/embed/kyA60hKb6OgD564g8M" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+            <div className='arrow'></div>
             
             <div className='second-p cards animate__animated'>
                 <AboutCard side='right' paragraph={2}/>
@@ -29,9 +33,6 @@ export const About = () => {
                 <AboutCard side='left' paragraph={3}/>
             </div>
         
-            <svg width="500" height="100" viewBox="0 0 500 100" preserveAspectRatio="none">
-                <path d="M0,100 Q250,40 500,100 L500,100 Z" fill="black" />
-            </svg>
         </div>
     );
 }

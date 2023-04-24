@@ -46,6 +46,16 @@
     background-size: 90%;
 }
 
+.cSharp {
+    background: url(../../../public/img/cSharp.png);
+    transform: skew(-25deg, 0);
+    width: 19vw;
+    height: 28vh;
+    top: -2vh;
+    left: -2vw;
+    background-size: 90%;
+}
+
 .measure {
     position: absolute;
     border: solid black;

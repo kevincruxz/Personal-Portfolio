@@ -4,7 +4,7 @@ import './form.css';
 
 export const Form = () => {
     return (
-        <div className='form'>
+        <div className='form' id='contact-section'>
             <h1>Contact Me</h1>
             <form>
                 <FormPiece tag='input' id='fname' type='text' desc='First Name' input='first-input'/>

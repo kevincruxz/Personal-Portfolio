@@ -2,7 +2,7 @@
     width: 100%;
     min-height: 90vh;
     text-align: center;
-    background: url(http://1.bp.blogspot.com/-4avc3R_9M9c/VcJIBLNnoZI/AAAAAAAAFY0/TMFeNXMRyQw/s1600/8bit%2Bgif%2Bjapan%2B-%2B1041uuu%2B-%2BDiedrica%2BBlog%2B01.gif);
+    background: url(../../../public/img/portada-principal.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -20,8 +20,10 @@
 }
 
 .frontpage .title {
-    margin-top: 33vh;
+    margin-top: 25vh;
     display: flex;
     flex-direction: column;
     gap: 2vh;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
 }
