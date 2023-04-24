@@ -26,7 +26,7 @@ export const AbilityCard = (props) => {
     return (
         <div className='abilityCard'>
             <div className={props.direction}>
-                <div className='branding'></div>
+                <div className='branding'><div className={props.logo + ' logos'}></div></div>
                 <div className={props.measureBar + ' measure'}></div>
             </div>
         </div>

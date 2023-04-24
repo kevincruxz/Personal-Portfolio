@@ -3,9 +3,9 @@ import './form-piece.css';
 export const FormPiece = (props) => {
     const tag = () => { 
         if (props.tag === 'input') { 
-            return <input id={props.id} type={props.type} /> 
+            return <input id={props.id} type={props.type} className={props.input + ' inputs'}/> 
         } 
-        return <textarea id='message' cols={28} rows={8}/>
+        return <textarea id='message' rows={15} className='mensaje'/>
     }
     return (
         <div className='form-piece'>

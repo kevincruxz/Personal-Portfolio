@@ -3,3 +3,27 @@
     flex-direction: column;
     gap: 1vh;
 }
+
+.inputs {
+    height: 7vh;
+    border-radius: 5px;
+    border: none;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.first-input {
+    width: 15vw;
+}
+
+.second-input {
+    width: 21vw;
+}
+
+.third-input {
+    width: 35vw;
+}
+
+.mensaje {
+    width: 50vw;
+}

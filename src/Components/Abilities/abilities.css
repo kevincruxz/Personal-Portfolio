@@ -1,5 +1,11 @@
-.abilities {
+.skill-cards {
     display: flex;
     flex-direction: column;
     gap: 15rem;
+    position: relative;
+}
+
+.abilities h1 {
+    text-align: center;
+    margin: 5vh;
 }

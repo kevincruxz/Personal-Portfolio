@@ -1,4 +1,41 @@
-.footer {
+.footer .social-net {
+    width: 9.5vw;
+    height: 19.5vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.footer a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.social-logos {
     min-height: 30vh;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 8vh;
+    gap: 5vw;
+}
+
+.github-logo {
+    background: url(../../../public/img/github.png);
+    
+}
+
+.linkedin-logo {
+    background: url(../../../public/img/linkedin.png);
+}
+
+.footer .social-net:hover {
+    transform: scale(1.1);
+}
+
+.footer p {
+    text-align: center;   
 }
