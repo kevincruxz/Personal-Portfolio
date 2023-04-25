@@ -7,7 +7,8 @@
     width: 20vw;
     height: 24vh;
     position: absolute;
-    background-color: red;
+    background-color: #2E3840;
+    border-radius: 5px;
 }
 
 .branding .logos {
@@ -61,41 +62,69 @@
     border: solid black;
     width: 80vw;
     height: 5rem;
-    background: linear-gradient(to right, black 50%, transparent 0);
-    background-size: 200% 100%;
-    background-position: right;
-    transition: 0.8s;
-}
-
-.right-direction .measure {
-    background: linear-gradient(to left, black 50%, transparent 0);
-    background-size: 200% 100%;
-    background-position: left;
     transition: 0.8s;
 }
 
 .left-direction .branding{
-    border-width: 2px 2px 2px 0;
+    border-width: 5px 5px 5px 0;
     transform: skew(-25deg, 0);
     left: -5vw;
 }
 
 .left-direction .measure {
-    border-width: 2px 2px 2px 0;
+    border-width: 5px 5px 5px 0px;
     transform: skew(-25deg, 0deg);
     top: 1rem;
-    left: 15.5vw;
+    left: 15.7vw;
+    background: linear-gradient(to right, black 50%, transparent 0);
+    background-size: 200% 100%;
+    background-position: right;
 }
 
 .right-direction .branding{
-    border-width: 2px 0px 2px 2px;
+    border-width: 5px 0 5px 5px;
     transform: skew(25deg, 0);
     right: -5vw;
 }
 
 .right-direction .measure {
-    border-width: 2px 0 2px 2px;
+    border-width: 5px 0 5px 5px;
     transform: skew(25deg, 0deg);
     top: 1rem;
-    right: 15.5vw;
+    right: 15.7vw;
+    background: linear-gradient(to left, black 50%, transparent 0);
+    background-size: 200% 100%;
+    background-position: left;
+}
+
+.skill-title {
+    display: inline;
+    position: absolute;
+    font-size: 30px;
+}
+
+.left-direction .skill-title {
+    top: -4vh;
+    left: 19vw;
+}
+
+.right-direction .skill-title {
+    top: -4vh;
+    right: 19vw;
+}
+
+.skill-description {
+    display: inline;
+    position: absolute;
+}
+
+.left-direction .skill-description {
+    top: 15vh;
+    left: 15vw;
+}
+
+.right-direction .skill-description {
+    text-align: right;
+    top: 15vh;
+    right: 15vw;
 }

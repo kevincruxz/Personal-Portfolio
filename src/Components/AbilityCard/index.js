@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import './abilityCard.css';
 
 export const AbilityCard = (props) => {
@@ -23,11 +22,25 @@ export const AbilityCard = (props) => {
         } 
     });
 
+    const writeDescription = () => {
+        if (props.name === 'HTML - CSS - Javascript') {
+            return 'Advanced domain in the use of these three technologies';
+        } else if (props.name === 'React') {
+            return 'Medium-beginner level in the domain of React, currently in the process of learning it developing projects like this portfolio';
+        } else if (props.name === 'Ruby') {
+            return 'Medium level of domain, I have developed a variety of projects using Ruby and a bit of Ruby on Rails';
+        } else {
+            return 'Advanced level, the first language I learned back in Mechatronics Engineering, I domain the OOP topic (classes, objects, etc.), and other programming topics';
+        }
+    }
+
     return (
         <div className='abilityCard'>
             <div className={props.direction}>
+                <h2 className='skill-title'>{props.name}</h2>
                 <div className='branding'><div className={props.logo + ' logos'}></div></div>
                 <div className={props.measureBar + ' measure'}></div>
+                <p className='skill-description'>{writeDescription()}</p>
             </div>
         </div>
     );

@@ -1,3 +1,9 @@
+.abilities {
+    background-color: #FF0303;
+    width: 100%;
+    min-height: 180vh;
+}
+
 .skill-cards {
     display: flex;
     flex-direction: column;
@@ -7,5 +13,5 @@
 
 .abilities h1 {
     text-align: center;
-    margin: 5vh;
+    padding: 5vh;
 }
