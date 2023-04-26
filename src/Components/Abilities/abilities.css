@@ -13,5 +13,7 @@
 
 .abilities h1 {
     text-align: center;
-    padding: 5vh;
+    padding: 5vh 0 23vh 0;
+    font-family: 'Nova Oval', cursive;
+    font-size: 60px;
 }

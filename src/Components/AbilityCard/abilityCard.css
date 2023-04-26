@@ -101,6 +101,7 @@
     display: inline;
     position: absolute;
     font-size: 30px;
+    font-family: 'Nova Oval', cursive;
 }
 
 .left-direction .skill-title {
@@ -116,6 +117,8 @@
 .skill-description {
     display: inline;
     position: absolute;
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
 }
 
 .left-direction .skill-description {

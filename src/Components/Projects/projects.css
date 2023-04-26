@@ -1,8 +1,8 @@
 .projects {
     width: 100%;
     min-height: 80%;
-    background-color: #62CDFF;
-    font-family: 'Montserrat', sans-serif;
+    background-color: #BBD6B8;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .projects-section-header {
@@ -12,6 +12,12 @@
     align-items: center;
     flex-direction: column;
     gap: 2vh;
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 5px;
+}
+
+.projects-section-header h1 {
+    font-size: 60px;
 }
 
 .scheme div {

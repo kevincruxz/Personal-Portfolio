@@ -5,7 +5,7 @@ export const Projects = () => {
     return (
         <div className="projects" id="projects-section">
             <div className="projects-section-header">
-                <h1>Projects</h1>
+                <h1>- Projects -</h1>
                 <h2>(Hover over the squares to see a preview)</h2>
             </div>
 
