@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Personal-Portfolio/static/css/main.e3bed3bb.css",
-    "main.js": "/Personal-Portfolio/static/js/main.1b7b675c.js",
+    "main.css": "/Personal-Portfolio/static/css/main.ef422e10.css",
+    "main.js": "/Personal-Portfolio/static/js/main.9b7b224e.js",
     "static/js/787.0a89034e.chunk.js": "/Personal-Portfolio/static/js/787.0a89034e.chunk.js",
     "static/media/project-wedding.gif": "/Personal-Portfolio/static/media/project-wedding.1bc47f8cb980e7117a4a.gif",
     "static/media/portada-principal.jpg": "/Personal-Portfolio/static/media/portada-principal.de66fac7d54e561ff4e6.jpg",
@@ -24,12 +24,12 @@
     "static/media/arrow.gif": "/Personal-Portfolio/static/media/arrow.b59221912aeceff8cc84.gif",
     "static/media/logo.svg": "/Personal-Portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/Personal-Portfolio/index.html",
-    "main.e3bed3bb.css.map": "/Personal-Portfolio/static/css/main.e3bed3bb.css.map",
-    "main.1b7b675c.js.map": "/Personal-Portfolio/static/js/main.1b7b675c.js.map",
+    "main.ef422e10.css.map": "/Personal-Portfolio/static/css/main.ef422e10.css.map",
+    "main.9b7b224e.js.map": "/Personal-Portfolio/static/js/main.9b7b224e.js.map",
     "787.0a89034e.chunk.js.map": "/Personal-Portfolio/static/js/787.0a89034e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3bed3bb.css",
-    "static/js/main.1b7b675c.js"
+    "static/css/main.ef422e10.css",
+    "static/js/main.9b7b224e.js"
   ]
 }
