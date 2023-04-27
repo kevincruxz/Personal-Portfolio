@@ -7,6 +7,13 @@
     position: absolute;
     text-decoration: none;
     font-size: 25px;
+    transition: 0.2s;
+}
+
+.navbar a:hover {
+    font-size: 28px;
+    text-decoration: underline;
+    
 }
 
 .navbar :nth-child(1) {
@@ -23,7 +30,7 @@
 .navbar :nth-child(3) {
     right: 30%;
     top: -25px;
-    transform: skew(4deg, 3deg);
+    transform: skew(6deg, 3deg);
 }
 
 .navbar :nth-child(4) {

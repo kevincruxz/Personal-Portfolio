@@ -20,41 +20,41 @@
 .html-css-js {
     background: url(../../../public/img/html_css_js.png);
     transform: skew(25deg, 0);
-    width: 15vw;
-    height: 18vh;
+    width: 13vw;
+    height: 16vh;
     background-size: 90%;
-    top: 0vh;
-    left: 4vw;
+    top: 2vh;
+    left: 5.2vw;
 }
 
 .react {
     background: url(../../../public/img/react.png);
     transform: skew(-25deg, 0);
-    width: 10vw;
-    height: 19vh;
-    top: 2vh;
-    left: 4vw;
-    background-size: 90%;
-}
-
-.ruby {
-    background: url(../../../public/img/ruby.png);
-    transform: skew(25deg, 0);
     width: 9vw;
     height: 18vh;
     top: 2vh;
-    left: 6vw;
+    left: 3vw;
     background-size: 90%;
 }
 
-.cSharp {
-    background: url(../../../public/img/cSharp.png);
+.programming {
+    background: url(../../../public/img/programming.png);
+    transform: skew(25deg, 0);
+    width: 15vw;
+    height: 24vh;
+    top: -1vh;
+    left: 4vw;
+    background-size: cover;
+}
+
+.soft-skills {
+    background: url(../../../public/img/soft-skills.png);
     transform: skew(-25deg, 0);
-    width: 19vw;
-    height: 28vh;
-    top: -2vh;
-    left: -2vw;
-    background-size: 90%;
+    width: 15.5vw;
+    height: 24.5vh;
+    top: -0.5vh;
+    left: 0vw;
+    background-size: 70%;
 }
 
 .measure {

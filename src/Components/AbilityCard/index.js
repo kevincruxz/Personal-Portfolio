@@ -24,13 +24,14 @@ export const AbilityCard = (props) => {
 
     const writeDescription = () => {
         if (props.name === 'HTML - CSS - Javascript') {
-            return 'Advanced domain in the use of these three technologies';
+            return 'Advanced level, I started learning the three basic web development tools 2 years ago with a web dev course and since then I have practiced and improved them with projects of more advenced complexity';
         } else if (props.name === 'React') {
-            return 'Medium-beginner level in the domain of React, currently in the process of learning it developing projects like this portfolio';
-        } else if (props.name === 'Ruby') {
-            return 'Medium level of domain, I have developed a variety of projects using Ruby and a bit of Ruby on Rails';
+            return 'Medium-beginner level in the domain of React, currently in the process of improving it more developing new projects, being this portfolio the first one';
+        } else if (props.name === 'Other Programming Languages') {
+            return 'I domain languages like C# (advanced), Ruby (Medium), Java (Medium) and Python (Beginner) and topics like  the OOP topic (classes, objects, etc.), and some other programming topics';
+            //Advanced level, the first language I learned back in Mechatronics Engineering, I domain
         } else {
-            return 'Advanced level, the first language I learned back in Mechatronics Engineering, I domain the OOP topic (classes, objects, etc.), and other programming topics';
+            return 'I am a proactive and responsible person who doesn\'t like to let down or dissapoint others, also I can communicate effectively and I enjoy the problem solving process';
         }
     }
 

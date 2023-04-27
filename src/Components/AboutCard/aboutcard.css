@@ -1,8 +1,6 @@
 .card {
-    font-size: 17px;
+    font-size: 20px;
     padding: 35px;
-    border-radius: 40px;
-    box-shadow: rgba(0, 0, 0, 0.3) -18px 19px 25px, rgba(0, 0, 0, 0.22) 8px 15px 12px;
 }
 
 
@@ -10,9 +8,17 @@
 .left {
     text-align: left;
     transform: skew(-2deg, -4deg);
+    border: solid black;
+    border-width: 5px;
+    border-radius: 10px;
+    box-shadow: rgba(46, 5, 31, 0.4) -5px 5px, rgba(65, 15, 46, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
 }
 
 .right {
     text-align: right;
     transform: skew(2deg, 2deg);
+    border: solid black;
+    border-width: 5px;
+    border-radius: 10px;
+    box-shadow: rgba(56, 9, 39, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
 }
