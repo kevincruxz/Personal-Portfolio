@@ -19,7 +19,7 @@
     position: absolute;
 }
 
-.project-square.wedding, .project-square.etch-a-sketch, .project-square.calculator, .project-square.ssc, .project-square.hangman {
+.project-square.wedding, .project-square.etch-a-sketch, .project-square.calculator, .project-square.ssc, .project-square.hangman, .project-square.god-gamers {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -56,7 +56,13 @@
     font-size: 18px;
 }
 
-.project-square.wedding:hover, .project-square.etch-a-sketch:hover, .project-square.calculator:hover, .project-square.ssc:hover, .project-square.hangman:hover {
+.god-gamers {
+    background: url(../../../public/img/portada6.png);
+    color: white;
+    font-size: 18px;
+}
+
+.project-square.wedding:hover, .project-square.etch-a-sketch:hover, .project-square.calculator:hover, .project-square.ssc:hover, .project-square.hangman:hover, .project-square.god-gamers:hover {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -81,10 +87,17 @@
 
 .ssc:hover {
     background: url(../../../public/img/project-ssc.gif);
+    margin-left: 5rem;
+    z-index: 2;
 }
 
 .hangman:hover {
     background: url(../../../public/img/project-hangman.gif);
+}
+
+.god-gamers:hover {
+    margin-right: 5rem;
+    z-index: 2;
 }
 
 .project-square:hover h3, .project-square:hover h2 {

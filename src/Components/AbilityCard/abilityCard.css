@@ -57,6 +57,16 @@
     background-size: 70%;
 }
 
+.backend {
+    background: url(../../../public/img/backend.png);
+    transform: skew(25deg, 0);
+    width: 15vw;
+    height: 24vh;
+    top: -1vh;
+    left: 4vw;
+    background-size: 60%;
+}
+
 .measure {
     position: absolute;
     border: solid black;

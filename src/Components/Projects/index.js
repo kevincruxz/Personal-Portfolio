@@ -15,6 +15,7 @@ export const Projects = () => {
                 <ProjectSquare project='calculator' name='Calculator' link='https://kevincruxz.github.io/calculator/' />
                 <ProjectSquare project='ssc' name='Sword Shield Crossbow' link='https://kevincruxz.github.io/sword_shield_crossbow-game/' />
                 <ProjectSquare project='hangman' name='hangman' link='https://replit.com/@kevincruxz/hangman#README.md' />
+                <ProjectSquare project='god-gamers' name='God Gamers' link='https://kevinsensei.000webhostapp.com/proyecto-juegos/index.php' />
             </div>
         </div>
     );
