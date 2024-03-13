@@ -42,7 +42,7 @@
     transform: skew(25deg, 0);
     width: 15vw;
     height: 24vh;
-    top: -1vh;
+    top: -0.5vh;
     left: 4vw;
     background-size: cover;
 }
@@ -52,13 +52,23 @@
     transform: skew(-25deg, 0);
     width: 15.5vw;
     height: 24.5vh;
-    top: -0.5vh;
+    top: 0vh;
     left: 0vw;
     background-size: 70%;
 }
 
 .backend {
     background: url(../../../public/img/backend.png);
+    transform: skew(-25deg, 0);
+    width: 15vw;
+    height: 24vh;
+    top: -1vh;
+    left: 1vw;
+    background-size: 60%;
+}
+
+.frontend {
+    background: url(../../../public/img/frontend.png);
     transform: skew(25deg, 0);
     width: 15vw;
     height: 24vh;

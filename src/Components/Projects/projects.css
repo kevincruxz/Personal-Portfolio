@@ -1,8 +1,9 @@
 .projects {
     width: 100%;
-    min-height: 80%;
+    min-height: 160vh;
     background-color: #BBD6B8;
     font-family: 'Josefin Sans', sans-serif;
+    position: relative;
 }
 
 .projects-section-header {
@@ -36,3 +37,9 @@
     position: relative;
 }
 
+.pikitos {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+    bottom: 0px;
+}

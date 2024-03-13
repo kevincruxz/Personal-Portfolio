@@ -1,4 +1,8 @@
 import './abilityCard.css';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export const AbilityCard = (props) => {
 
@@ -19,21 +23,23 @@ export const AbilityCard = (props) => {
         } else if (window.scrollY < props.visibleLevel) {
             //remove animation
             bar.style.cssText = 'background-position: ' + props.moveBarTo + ';';
-        } 
+        }
     });
 
     const writeDescription = () => {
         if (props.name === 'HTML - CSS - Javascript') {
-            return 'Advanced level, I started learning the three basic web development tools 2 years ago with a web dev course and since then I have practiced and improved them with projects of more advenced complexity';
-        } else if (props.name === 'React') {
-            return 'Medium-beginner level in the domain of React, currently in the process of improving it developing new projects, being this portfolio the first one';
-        } else if (props.name === 'Other Programming Languages') {
-            return 'I domain programming languages like C# (advanced), Ruby (Medium), Java (Medium) and Python (Beginner). I have experience using OOP (classes, objects, etc.)';
-            //Advanced level, the first language I learned back in Mechatronics Engineering, I domain
-        } else if (props.name === 'Soft Skills') {
-            return 'I am a proactive and responsible person who doesn\'t like to let down or dissapoint others, also I can communicate effectively and I enjoy the problem solving process';
+            return 'Advanced level, 3 years of experience using them, I started with a web dev course and since then I have practiced and improved my abilities with projects of more advenced complexity';
+        } else if (props.name === 'Javascript Frameworks (React, NextJS, Express)') {
+            return 'Medium level, I have experience using React and NextJS for frontend development, and I am currently learning Express for backend development. I have experience using hooks, context, and I have created a few projects using these frameworks. I have also used Material UI and Bootstrap for styling and responsiveness.';
+        } else if (props.name === 'Programming Languages / Algorithms') {
+            return 'I domain programming languages like C# (advanced), Ruby (Medium), Java (Medium) and Python (Medium). I have experience using algorithms and data structures, I have created a few projects using these languages and I have experience using OOP and functional programming.';
+        } else if (props.name === 'Backend (PHP, SQL, MongoDB)') {
+            return 'I can create backend systems using PHP and SQL, also I have experience using MongoDB for NoSQL databases. I have created a few projects using these technologies and I have experience using APIs and CRUD operations.';
+        } else if (props.name === 'Frontend / Web Design') {
+            return 'I have experience desgning and creating unique web designs, I can use CSS Frameworks like Bootstrap or Tailwind, also I can use external tools like Canva and Photoshop for designing and prototyping web pages';
         } else {
-            return 'Can create backend systems using PHP, MySQL. Currently learning Express and MongoDB';
+            //Soft Skills
+            return 'I am a proactive and responsible person, I can communicate effectively and I enjoy the problem solving process';
         }
     }
 

@@ -1,6 +1,7 @@
 import { Navbar } from '../Navbar';
 import { AboutCard } from '../AboutCard';
 import './about.css';
+import olitasImage from './olitas.png';
 import { useState } from 'react';
 import 'animate.css';
 
@@ -32,6 +33,7 @@ export const About = () => {
         
             <div className='ricardo-milos'></div>
 
+            <img src={olitasImage} alt="Olas" className='olitas' />
         </div>
     );
 }

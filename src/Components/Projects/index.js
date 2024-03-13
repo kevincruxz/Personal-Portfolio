@@ -1,5 +1,6 @@
 import { ProjectSquare } from "../ProjectSquare";
 import './projects.css'
+import pikitos from './pikitos.png';
 
 export const Projects = () => {
     return (
@@ -17,6 +18,8 @@ export const Projects = () => {
                 <ProjectSquare project='hangman' name='hangman' link='https://replit.com/@kevincruxz/hangman#README.md' />
                 <ProjectSquare project='god-gamers' name='God Gamers' link='https://kevinsensei.000webhostapp.com/proyecto-juegos/index.php' />
             </div>
+
+            <img src={pikitos} alt="Pikitos" className="pikitos" />
         </div>
     );
 } 
