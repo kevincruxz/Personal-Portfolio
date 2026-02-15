@@ -1,0 +1,60 @@
+.hero {
+  padding-top: 0;
+  margin-bottom: 80px;
+}
+
+.hero__greeting {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  color: var(--color-accent);
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.hero__name {
+  font-size: 56px;
+  font-weight: 700;
+  color: var(--color-text-heading);
+  line-height: 1.1;
+  margin-bottom: 8px;
+  display: none; /* Hidden on desktop since sidebar shows name */
+}
+
+.hero__headline {
+  font-size: 44px;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.hero__description {
+  font-size: 17px;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  max-width: 540px;
+}
+
+.hero__highlight {
+  color: var(--color-accent);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    margin-bottom: 40px;
+  }
+
+  .hero__name {
+    display: none;
+  }
+
+  .hero__headline {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  .hero__description {
+    font-size: 15px;
+  }
+}

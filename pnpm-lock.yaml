@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@formspree/react':
-        specifier: ^2.4.1
-        version: 2.5.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@testing-library/jest-dom':
         specifier: ^5.16.5
         version: 5.17.0
@@ -20,12 +17,6 @@ importers:
       '@testing-library/user-event':
         specifier: ^13.5.0
         version: 13.5.0(@testing-library/dom@8.20.1)
-      animate.css:
-        specifier: ^4.1.1
-        version: 4.1.1
-      gsap:
-        specifier: ^3.12.5
-        version: 3.14.2
       react:
         specifier: ^18.2.0
         version: 18.3.1
@@ -35,9 +26,6 @@ importers:
       react-scripts:
         specifier: 5.0.1
         version: 5.0.1(@babel/plugin-syntax-flow@7.28.6(@babel/core@7.29.0))(@babel/plugin-transform-react-jsx@7.28.6(@babel/core@7.29.0))(@types/babel__core@7.20.5)(eslint@8.57.1)(react@18.3.1)(type-fest@0.21.3)(typescript@4.9.5)
-      typed.js:
-        specifier: ^2.0.15
-        version: 2.1.0
       web-vitals:
         specifier: ^2.1.4
         version: 2.1.4
@@ -882,15 +870,6 @@ packages:
     resolution: {integrity: sha512-d9zaMRSTIKDLhctzH12MtXvJKSSUhaHcjV+2Z+GK+EEY7XKpP5yR4x+N3TAcHTcu963nIr+TMcCb4DBCYX1z6Q==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  '@formspree/core@3.0.4':
-    resolution: {integrity: sha512-VpdvQfSbcD4smrk1Gb5RJPBYBWmiNVWkiZs6ddu7afnu/OjKGlIPVo42LNNS5ht2joabcTCiyOZgATjqOdqs+g==}
-
-  '@formspree/react@2.5.5':
-    resolution: {integrity: sha512-VmfFW2f/aSMu023Wt84xGlDquRjbbJbJWtTFie9RI70k/EuVJ41Noj1kGHtYVajry9B1pEMyAh4PovdcdCYAHQ==}
-    peerDependencies:
-      react: ^16.8 || ^17.0 || ^18.0
-      react-dom: ^16.8 || ^17.0 || ^18.0
-
   '@humanwhocodes/config-array@0.13.0':
     resolution: {integrity: sha512-DZLEEqFWQFiyK6h5YIeynKx7JlvCYWL0cImfSRXZ9l4Sg2efkFGTuFf6vzXjK1cq6IYkU+Eg/JizXw+TD2vRNw==}
     engines: {node: '>=10.10.0'}
@@ -1114,16 +1093,6 @@ packages:
 
   '@sinonjs/fake-timers@8.1.0':
     resolution: {integrity: sha512-OAPJUAtgeINhh/TAlUID4QTs53Njm7xzddaVlEs/SXwgtiD1tW22zAB/W1wdqfrpmikgaWQ9Fw6Ws+hsiRm5Vg==}
-
-  '@stripe/react-stripe-js@1.16.5':
-    resolution: {integrity: sha512-lVPW3IfwdacyS22pP+nBB6/GNFRRhT/4jfgAK6T2guQmtzPwJV1DogiGGaBNhiKtSY18+yS8KlHSu+PvZNclvQ==}
-    peerDependencies:
-      '@stripe/stripe-js': ^1.44.1
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
-      react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-
-  '@stripe/stripe-js@1.54.2':
-    resolution: {integrity: sha512-R1PwtDvUfs99cAjfuQ/WpwJ3c92+DAMy9xGApjqlWQMj0FKQabUAys2swfTRNzuYAYJh7NqK2dzcYVNkKLEKUg==}
 
   '@surma/rollup-plugin-off-main-thread@2.2.3':
     resolution: {integrity: sha512-lR8q/9W7hZpMWweNiAKU7NQerBnzQQLvi8qnTDU/fxItPhtZVMbPV3lbCwjhIlNBe9Bbr5V+KHshvWmVSG9cxQ==}
@@ -1563,9 +1532,6 @@ packages:
 
   ajv@8.18.0:
     resolution: {integrity: sha512-PlXPeEWMXMZ7sPYOHqmDyCJzcfNrUr3fGNKtezX14ykXOEIvyK81d+qydx89KY5O71FKMPaQ2vBfBFI5NHR63A==}
-
-  animate.css@4.1.1:
-    resolution: {integrity: sha512-+mRmCTv6SbCmtYJCN4faJMNFVNN5EuCTTprDTAo7YzIGji2KADmakjVA3+8mVDkZ2Bf09vayB35lSQIex2+QaQ==}
 
   ansi-escapes@4.3.2:
     resolution: {integrity: sha512-gKXj5ALrKWQLsYG9jlTRmR/xKluxHV+Z9QEwNIgCfM1/uwPMCuzVVnh5mwTd+OuBZcwSIMbqssNWRm1lE51QaQ==}
@@ -2924,9 +2890,6 @@ packages:
 
   graphemer@1.4.0:
     resolution: {integrity: sha512-EtKwoO6kxCL9WO5xipiHTZlSzBm7WLT627TqC/uVRd0HKmq8NXyebnNYxDoBi7wt8eTWrUrKXCOVaFq9x1kgag==}
-
-  gsap@3.14.2:
-    resolution: {integrity: sha512-P8/mMxVLU7o4+55+1TCnQrPmgjPKnwkzkXOK1asnR9Jg2lna4tEY5qBJjMmAaOBDDZWtlRjBXjLa0w53G/uBLA==}
 
   gzip-size@6.0.0:
     resolution: {integrity: sha512-ax7ZYomf6jqPTQ4+XCpUGyXKHk5WweS+e05MBO4/y3WJ5RkmPXNKvX+bx1behVILVwr6JSQvZAku021CHPXG3Q==}
@@ -5270,9 +5233,6 @@ packages:
     resolution: {integrity: sha512-3KS2b+kL7fsuk/eJZ7EQdnEmQoaho/r6KUef7hxvltNA5DR8NAUM+8wJMbJyZ4G9/7i3v5zPBIMN5aybAh2/Jg==}
     engines: {node: '>= 0.4'}
 
-  typed.js@2.1.0:
-    resolution: {integrity: sha512-bDuXEf7YcaKN4g08NMTUM6G90XU25CK3bh6U0THC/Mod/QPKlEt9g/EjvbYB8x2Qwr2p6J6I3NrsoYaVnY6wsQ==}
-
   typedarray-to-buffer@3.1.5:
     resolution: {integrity: sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==}
 
@@ -6635,18 +6595,6 @@ snapshots:
 
   '@eslint/js@8.57.1': {}
 
-  '@formspree/core@3.0.4':
-    dependencies:
-      '@stripe/stripe-js': 1.54.2
-
-  '@formspree/react@2.5.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@formspree/core': 3.0.4
-      '@stripe/react-stripe-js': 1.16.5(@stripe/stripe-js@1.54.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@stripe/stripe-js': 1.54.2
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-
   '@humanwhocodes/config-array@0.13.0':
     dependencies:
       '@humanwhocodes/object-schema': 2.0.3
@@ -6979,15 +6927,6 @@ snapshots:
   '@sinonjs/fake-timers@8.1.0':
     dependencies:
       '@sinonjs/commons': 1.8.6
-
-  '@stripe/react-stripe-js@1.16.5(@stripe/stripe-js@1.54.2)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
-    dependencies:
-      '@stripe/stripe-js': 1.54.2
-      prop-types: 15.8.1
-      react: 18.3.1
-      react-dom: 18.3.1(react@18.3.1)
-
-  '@stripe/stripe-js@1.54.2': {}
 
   '@surma/rollup-plugin-off-main-thread@2.2.3':
     dependencies:
@@ -7540,8 +7479,6 @@ snapshots:
       fast-uri: 3.1.0
       json-schema-traverse: 1.0.0
       require-from-string: 2.0.2
-
-  animate.css@4.1.1: {}
 
   ansi-escapes@4.3.2:
     dependencies:
@@ -9203,8 +9140,6 @@ snapshots:
   graceful-fs@4.2.11: {}
 
   graphemer@1.4.0: {}
-
-  gsap@3.14.2: {}
 
   gzip-size@6.0.0:
     dependencies:
@@ -11994,8 +11929,6 @@ snapshots:
       is-typed-array: 1.1.15
       possible-typed-array-names: 1.1.0
       reflect.getprototypeof: 1.0.10
-
-  typed.js@2.1.0: {}
 
   typedarray-to-buffer@3.1.5:
     dependencies:
