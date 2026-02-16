@@ -69,19 +69,89 @@
   gap: 16px;
 }
 
-.project-card {
-  background-color: var(--color-bg-light);
+/* ---- Flip card wrapper ---- */
+.project-flip {
+  perspective: 900px;
+  min-height: 300px;
+  cursor: pointer;
+}
+
+.project-flip__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.project-flip--flipped .project-flip__inner {
+  transform: rotateY(180deg);
+}
+
+.project-flip__face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border-radius: 8px;
+  overflow: hidden;
+}
+
+.project-flip__front {
+  background-color: var(--color-bg-light);
   padding: 28px 24px;
   display: flex;
   flex-direction: column;
-  transition: var(--transition);
-  height: 100%;
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-.project-card:hover {
-  transform: translateY(-4px);
+.project-flip:hover .project-flip__front {
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.project-flip__back {
+  transform: rotateY(180deg);
+  background-color: var(--color-bg-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-flip__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-flip__back-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px 16px;
+  background: linear-gradient(transparent, rgba(10, 25, 47, 0.92));
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--color-accent);
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+}
+
+.project-flip__hint {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--color-text-muted, #495670);
+  transition: color 0.25s ease;
+}
+
+.project-flip:hover .project-flip__hint {
+  color: var(--color-accent);
 }
 
 .project-card__top {
@@ -117,7 +187,7 @@
   transition: var(--transition);
 }
 
-.project-card:hover .project-card__title {
+.project-flip:hover .project-card__title {
   color: var(--color-accent);
 }
 
@@ -154,6 +224,10 @@
 @media (max-width: 768px) {
   .projects__grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-flip {
+    min-height: 280px;
   }
 
   .project-featured {

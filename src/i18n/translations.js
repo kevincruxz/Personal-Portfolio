@@ -97,6 +97,7 @@ const translations = {
           tech: ["React", "CSS Animations", "JavaScript"],
           link: "https://kevincruxz.github.io/wedding-invitation/",
           github: "https://github.com/kevincruxz/wedding-invitation",
+          image: "/img/project-wedding.gif",
           category: "personal",
         },
         {
@@ -106,6 +107,7 @@ const translations = {
           tech: ["HTML", "CSS", "JavaScript"],
           link: "https://kevincruxz.github.io/Calculator/",
           github: "https://github.com/kevincruxz/Calculator",
+          image: "/img/project-calculator.gif",
           category: "personal",
         },
         {
@@ -115,6 +117,7 @@ const translations = {
           tech: ["HTML", "CSS", "JavaScript"],
           link: "https://kevincruxz.github.io/Etch-a-sketch/",
           github: "https://github.com/kevincruxz/Etch-a-sketch",
+          image: "/img/project-etch-a-sketch.gif",
           category: "personal",
         },
         {
@@ -124,6 +127,7 @@ const translations = {
           tech: ["HTML", "CSS", "JavaScript"],
           link: "https://kevincruxz.github.io/SwordShieldCrossbow/",
           github: "https://github.com/kevincruxz/SwordShieldCrossbow",
+          image: "/img/project-ssc.gif",
           category: "personal",
         },
       ],
@@ -265,6 +269,7 @@ const translations = {
           tech: ["React", "CSS Animations", "JavaScript"],
           link: "https://kevincruxz.github.io/wedding-invitation/",
           github: "https://github.com/kevincruxz/wedding-invitation",
+          image: "/img/project-wedding.gif",
           category: "personal",
         },
         {
@@ -274,6 +279,7 @@ const translations = {
           tech: ["HTML", "CSS", "JavaScript"],
           link: "https://kevincruxz.github.io/Calculator/",
           github: "https://github.com/kevincruxz/Calculator",
+          image: "/img/project-calculator.gif",
           category: "personal",
         },
         {
@@ -283,6 +289,7 @@ const translations = {
           tech: ["HTML", "CSS", "JavaScript"],
           link: "https://kevincruxz.github.io/Etch-a-sketch/",
           github: "https://github.com/kevincruxz/Etch-a-sketch",
+          image: "/img/project-etch-a-sketch.gif",
           category: "personal",
         },
         {
@@ -292,6 +299,7 @@ const translations = {
           tech: ["HTML", "CSS", "JavaScript"],
           link: "https://kevincruxz.github.io/SwordShieldCrossbow/",
           github: "https://github.com/kevincruxz/SwordShieldCrossbow",
+          image: "/img/project-ssc.gif",
           category: "personal",
         },
       ],
