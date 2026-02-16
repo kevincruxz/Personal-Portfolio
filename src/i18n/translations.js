@@ -65,6 +65,11 @@ const translations = {
           tech: ["Next.js", "Hono", "Cloudflare Workers", "MCP", "AI"],
           featured: true,
           category: "personal",
+          carousel: [
+            "/img/inbytes1.png",
+            "/img/inbytes2.png",
+            "/img/inbytes3.png",
+          ],
         },
         {
           title: "Visual Alerts Hub",
@@ -237,6 +242,11 @@ const translations = {
           tech: ["Next.js", "Hono", "Cloudflare Workers", "MCP", "AI"],
           featured: true,
           category: "personal",
+          carousel: [
+            "/img/inbytes1.png",
+            "/img/inbytes2.png",
+            "/img/inbytes3.png",
+          ],
         },
         {
           title: "Hub de Alertas Visuales",

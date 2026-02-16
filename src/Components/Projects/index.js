@@ -128,6 +128,90 @@ function FlipCard({ project }) {
   );
 }
 
+function FeaturedFlipCard({ project, label }) {
+  const [flipped, setFlipped] = useState(false);
+  const [height, setHeight] = useState(320);
+  const frontRef = useRef(null);
+
+  const measure = useCallback(() => {
+    if (frontRef.current) {
+      setHeight(frontRef.current.scrollHeight);
+    }
+  }, []);
+
+  useEffect(() => {
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, [measure]);
+
+  const images = project.carousel || [];
+  // Duplicate images for seamless infinite loop
+  const track = [...images, ...images];
+
+  return (
+    <div
+      className={`featured-flip${flipped ? " featured-flip--flipped" : ""}`}
+      style={{ height }}
+      onClick={() => setFlipped((f) => !f)}
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          setFlipped((f) => !f);
+        }
+      }}
+      role="button"
+      tabIndex={0}
+      aria-label={
+        flipped
+          ? `Click to see details of ${project.title}`
+          : `Click to see preview of ${project.title}`
+      }
+    >
+      <div className="featured-flip__inner">
+        {/* Front */}
+        <div ref={frontRef} className="featured-flip__face featured-flip__front">
+          <div className="project-featured__label">{label}</div>
+          <h3 className="project-featured__title">{project.title}</h3>
+          <div className="project-featured__desc">
+            <p>{project.description}</p>
+          </div>
+          <ul className="project-featured__tech">
+            {project.tech.map((tech, j) => (
+              <li key={j}>{tech}</li>
+            ))}
+          </ul>
+          <span className="featured-flip__hint">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="14" height="14">
+              <polyline points="23 4 23 10 17 10" />
+              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10" />
+            </svg>
+            Click to preview
+          </span>
+        </div>
+
+        {/* Back – infinite carousel */}
+        <div className="featured-flip__face featured-flip__back">
+          <div className="carousel">
+            <div className="carousel__track">
+              {track.map((src, i) => (
+                <img
+                  key={i}
+                  src={process.env.PUBLIC_URL + src}
+                  alt={`${project.title} screenshot ${(i % images.length) + 1}`}
+                  className="carousel__slide"
+                  loading="lazy"
+                />
+              ))}
+            </div>
+          </div>
+          <span className="featured-flip__back-label">{project.title}</span>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export function Projects() {
   const { t } = useLanguage();
   const projects = t.projects.items;
@@ -142,22 +226,30 @@ export function Projects() {
 
       {/* Featured projects */}
       <div className="projects__featured">
-        {featuredProjects.map((project, i) => (
-          <div key={i} className="project-featured">
-            <div className="project-featured__label">
-              {t.projects.featured}
+        {featuredProjects.map((project, i) =>
+          project.carousel ? (
+            <FeaturedFlipCard
+              key={i}
+              project={project}
+              label={t.projects.featured}
+            />
+          ) : (
+            <div key={i} className="project-featured">
+              <div className="project-featured__label">
+                {t.projects.featured}
+              </div>
+              <h3 className="project-featured__title">{project.title}</h3>
+              <div className="project-featured__desc">
+                <p>{project.description}</p>
+              </div>
+              <ul className="project-featured__tech">
+                {project.tech.map((tech, j) => (
+                  <li key={j}>{tech}</li>
+                ))}
+              </ul>
             </div>
-            <h3 className="project-featured__title">{project.title}</h3>
-            <div className="project-featured__desc">
-              <p>{project.description}</p>
-            </div>
-            <ul className="project-featured__tech">
-              {project.tech.map((tech, j) => (
-                <li key={j}>{tech}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+          )
+        )}
       </div>
 
       {/* Other projects — flip cards */}

@@ -62,6 +62,122 @@
   white-space: nowrap;
 }
 
+/* ---- Featured flip card (inBytes) ---- */
+.featured-flip {
+  perspective: 1200px;
+  cursor: pointer;
+}
+
+.featured-flip__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+.featured-flip--flipped .featured-flip__inner {
+  transform: rotateY(180deg);
+}
+
+.featured-flip__face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.featured-flip__front {
+  z-index: 2;
+  background-color: var(--color-bg-light);
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.25s ease;
+}
+
+.featured-flip:hover .featured-flip__front {
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.featured-flip__back {
+  z-index: 1;
+  transform: rotateY(180deg);
+  background-color: var(--color-bg-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.featured-flip__back-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 14px 20px;
+  background: linear-gradient(transparent, rgba(10, 25, 47, 0.95));
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--color-accent);
+  text-align: center;
+  border-radius: 0 0 8px 8px;
+  font-weight: 600;
+}
+
+.featured-flip__hint {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 16px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--color-text-muted, #495670);
+  transition: color 0.25s ease;
+}
+
+.featured-flip:hover .featured-flip__hint {
+  color: var(--color-accent);
+}
+
+/* ---- Infinite horizontal carousel ---- */
+.carousel {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.carousel__track {
+  display: flex;
+  height: 100%;
+  animation: carousel-scroll 20s linear infinite;
+  will-change: transform;
+}
+
+.carousel__track:hover {
+  animation-play-state: paused;
+}
+
+.carousel__slide {
+  flex: 0 0 auto;
+  height: 100%;
+  width: auto;
+  max-width: none;
+  object-fit: cover;
+  border-right: 3px solid var(--color-bg);
+}
+
+@keyframes carousel-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
 /* Other projects grid */
 .projects__grid {
   display: grid;
@@ -229,6 +345,10 @@
 
   .flip-card {
     min-height: 260px;
+  }
+
+  .featured-flip__front {
+    padding: 24px 20px;
   }
 
   .project-featured {
