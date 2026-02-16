@@ -151,8 +151,8 @@
 
 .carousel__track {
   display: flex;
-  height: 100%;
-  animation: carousel-scroll 20s linear infinite;
+  align-items: stretch;
+  animation: carousel-scroll 14s linear infinite;
   will-change: transform;
 }
 
@@ -162,11 +162,11 @@
 
 .carousel__slide {
   flex: 0 0 auto;
+  width: 800px;
   height: 100%;
-  width: auto;
-  max-width: none;
   object-fit: cover;
-  border-right: 3px solid var(--color-bg);
+  object-position: top;
+  border-right: 4px solid var(--color-bg);
 }
 
 @keyframes carousel-scroll {
@@ -349,6 +349,10 @@
 
   .featured-flip__front {
     padding: 24px 20px;
+  }
+
+  .carousel__slide {
+    width: 500px;
   }
 
   .project-featured {
