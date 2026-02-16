@@ -1,22 +1,51 @@
-import logo from './logo.svg';
-import './App.css';
-import Frontpage from './Components/Frontpage';
-import { About } from './Components/About';
-import { Projects } from './Components/Projects';
-import { Abilities } from './Components/Abilities';
-import { Form } from './Components/Form';
-import { Footer } from './Components/Footer';
+import React, { useEffect } from "react";
+import "./App.css";
+import { LanguageProvider } from "./context/LanguageContext";
+import { Sidebar } from "./Components/Sidebar";
+import { Hero } from "./Components/Hero";
+import { Experience } from "./Components/Experience";
+import { Projects } from "./Components/Projects";
+import { Skills } from "./Components/Skills";
+import { Contact } from "./Components/Contact";
+import { Footer } from "./Components/Footer";
 
 function App() {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
+    );
+
+    const elements = document.querySelectorAll(".fade-section");
+    elements.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
-    <div className="App">
-      <Frontpage />
-      <About />
-      <Projects />
-      <Abilities />
-      <Form />
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="App">
+        <div className="layout">
+          <div className="layout__sidebar">
+            <Sidebar />
+          </div>
+          <main className="layout__content">
+            <Hero />
+            <Experience />
+            <Projects />
+            <Skills />
+            <Contact />
+            <Footer />
+          </main>
+        </div>
+      </div>
+    </LanguageProvider>
   );
 }
 

@@ -1,20 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat&family=Prata&family=Josefin+Sans&family=Satisfy&family=Quicksand&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Nova+Oval&family=Shadows+Into+Light&family=Kalam&family=Bruno+Ace+SC&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Sedgwick+Ave+Display&display=swap');
-
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
-
 .App {
   width: 100%;
-  overflow: hidden;
+  min-height: 100vh;
+}
+
+/* Layout: sidebar + main content on desktop */
+.layout {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.layout__sidebar {
+  position: sticky;
+  top: 0;
+  width: 45%;
+  max-width: 480px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 100px 24px 100px 48px;
+}
+
+.layout__content {
+  flex: 1;
+  padding: 100px 48px 100px 24px;
+}
+
+/* Sections */
+.section {
+  margin-bottom: 120px;
+}
+
+.section:last-child {
+  margin-bottom: 60px;
+}
+
+.section__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-text-heading);
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.section__title::before {
+  content: attr(data-number);
+  font-family: var(--font-mono);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-accent);
+}
+
+.section__title::after {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  max-width: 200px;
+  background-color: var(--color-bg-lighter);
+}
+
+/* Fade in on scroll animation */
+.fade-section {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .layout__sidebar {
+    position: relative;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    padding: 60px 24px 40px;
+  }
+
+  .layout__content {
+    padding: 20px 24px 60px;
+  }
+
+  .section {
+    margin-bottom: 80px;
+  }
+
+  .section__title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .layout__sidebar {
+    padding: 40px 20px 30px;
+  }
+
+  .layout__content {
+    padding: 10px 20px 40px;
+  }
 }
