@@ -89,27 +89,31 @@
 }
 
 .project-flip__face {
-  position: absolute;
-  inset: 0;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   border-radius: 8px;
   overflow: hidden;
 }
 
+/* Front face is in-flow so it defines the card height */
 .project-flip__front {
+  position: relative;
   background-color: var(--color-bg-light);
   padding: 28px 24px;
   display: flex;
   flex-direction: column;
-  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  transition: box-shadow 0.25s ease;
+  min-height: 300px;
 }
 
 .project-flip:hover .project-flip__front {
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
 }
 
+/* Back face sits on top, same size as front */
 .project-flip__back {
+  position: absolute;
+  inset: 0;
   transform: rotateY(180deg);
   background-color: var(--color-bg-light);
   display: flex;
