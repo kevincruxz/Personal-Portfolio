@@ -20,8 +20,7 @@ export function Hero() {
 
   return (
     <section id="about" className="hero fade-section">
-      <p className="hero__greeting">{t.hero.greeting}</p>
-      <h2 className="hero__name">{t.hero.name}</h2>
+      <p className="hero__greeting">{t.hero.greeting} {t.hero.name}</p>
       <h3 className="hero__headline">{t.hero.headline}</h3>
       <p className="hero__description">{renderDescription(t.hero.description)}</p>
     </section>

@@ -17,7 +17,7 @@
   color: var(--color-text-heading);
   line-height: 1.1;
   margin-bottom: 8px;
-  display: none; /* Hidden on desktop since sidebar shows name */
+
 }
 
 .hero__headline {

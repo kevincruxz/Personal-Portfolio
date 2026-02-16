@@ -88,7 +88,7 @@ export function Sidebar() {
             </svg>
           </a>
           <a
-            href="https://www.linkedin.com/in/kevincruzlozano/"
+            href="https://www.linkedin.com/in/kevincruxz/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
@@ -100,7 +100,7 @@ export function Sidebar() {
             </svg>
           </a>
           <a
-            href="mailto:kevincruzl03@gmail.com"
+            href="mailto:kevin_cruzz@outlook.es"
             aria-label="Email"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
