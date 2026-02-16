@@ -59,6 +59,14 @@ const translations = {
       featured: "Featured",
       items: [
         {
+          title: "inBytes",
+          description:
+            "SaaS platform for creating digital invitations for all types of events. Features an internal MCP (Model Context Protocol) for automatic invitation generation through prompts. Currently in active development.",
+          tech: ["Next.js", "Hono", "Cloudflare Workers", "MCP", "AI"],
+          featured: true,
+          category: "personal",
+        },
+        {
           title: "Visual Alerts Hub",
           description:
             "Web platform for creating and deploying real-time visual alerts across a manufacturing plant's screens. Supports Quality, Safety, and General Communications channels.",
@@ -129,7 +137,7 @@ const translations = {
         },
         {
           name: "Backend",
-          items: ["C# .NET Core", "Node.js", "Express", "PHP", "REST APIs"],
+          items: ["C# .NET Core", "Node.js", "Hono", "Express", "PHP", "REST APIs"],
         },
         {
           name: "Databases",
@@ -137,7 +145,7 @@ const translations = {
         },
         {
           name: "DevOps & Cloud",
-          items: ["Docker", "Kubernetes", "Rancher", "JFrog", "GitHub Actions", "Azure"],
+          items: ["Docker", "Kubernetes", "Cloudflare Workers", "Rancher", "JFrog", "GitHub Actions", "Azure"],
         },
         {
           name: "Data & BI",
@@ -219,6 +227,14 @@ const translations = {
       featured: "Destacado",
       items: [
         {
+          title: "inBytes",
+          description:
+            "Plataforma SaaS para la creacion de invitaciones digitales para todo tipo de eventos. Cuenta con un MCP (Model Context Protocol) interno para la generacion automatica de invitaciones a traves de prompts. Actualmente en desarrollo activo.",
+          tech: ["Next.js", "Hono", "Cloudflare Workers", "MCP", "AI"],
+          featured: true,
+          category: "personal",
+        },
+        {
           title: "Hub de Alertas Visuales",
           description:
             "Plataforma web para crear y desplegar alertas visuales en tiempo real en las pantallas de una planta manufacturera. Soporta canales de Calidad, Seguridad y Comunicaciones Generales.",
@@ -289,7 +305,7 @@ const translations = {
         },
         {
           name: "Backend",
-          items: ["C# .NET Core", "Node.js", "Express", "PHP", "REST APIs"],
+          items: ["C# .NET Core", "Node.js", "Hono", "Express", "PHP", "REST APIs"],
         },
         {
           name: "Bases de Datos",
@@ -297,7 +313,7 @@ const translations = {
         },
         {
           name: "DevOps y Nube",
-          items: ["Docker", "Kubernetes", "Rancher", "JFrog", "GitHub Actions", "Azure"],
+          items: ["Docker", "Kubernetes", "Cloudflare Workers", "Rancher", "JFrog", "GitHub Actions", "Azure"],
         },
         {
           name: "Datos y BI",
