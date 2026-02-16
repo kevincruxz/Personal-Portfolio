@@ -69,67 +69,63 @@
   gap: 16px;
 }
 
-/* ---- Flip card wrapper ---- */
-.project-flip {
-  perspective: 900px;
-  min-height: 300px;
+/* ---- Flip card ---- */
+.flip-card {
+  perspective: 1000px;
   cursor: pointer;
 }
 
-.project-flip__inner {
+.flip-card__inner {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.65s cubic-bezier(0.4, 0, 0.2, 1);
   transform-style: preserve-3d;
 }
 
-.project-flip--flipped .project-flip__inner {
+.flip-card--flipped .flip-card__inner {
   transform: rotateY(180deg);
 }
 
-.project-flip__face {
+/* Both faces fill the container and hide when facing away */
+.flip-card__face {
+  position: absolute;
+  inset: 0;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   border-radius: 8px;
   overflow: hidden;
 }
 
-/* Front face is in-flow so it defines the card height */
-.project-flip__front {
-  position: relative;
+/* Front */
+.flip-card__front {
+  z-index: 2;
   background-color: var(--color-bg-light);
   padding: 28px 24px;
   display: flex;
   flex-direction: column;
   transition: box-shadow 0.25s ease;
-  min-height: 300px;
 }
 
-.project-flip:hover .project-flip__front {
+.flip-card:hover .flip-card__front {
   box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
 }
 
-/* Back face sits on top, same size as front */
-.project-flip__back {
-  position: absolute;
-  inset: 0;
+/* Back – starts rotated 180 so backface-visibility hides it */
+.flip-card__back {
+  z-index: 1;
   transform: rotateY(180deg);
   background-color: var(--color-bg-light);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-.project-flip__image {
+.flip-card__image {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 8px;
 }
 
-.project-flip__back-label {
+.flip-card__back-label {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -143,18 +139,19 @@
   border-radius: 0 0 8px 8px;
 }
 
-.project-flip__hint {
+.flip-card__hint {
   display: flex;
   align-items: center;
   gap: 6px;
-  margin-top: 12px;
+  margin-top: auto;
+  padding-top: 12px;
   font-family: var(--font-mono);
   font-size: 11px;
   color: var(--color-text-muted, #495670);
   transition: color 0.25s ease;
 }
 
-.project-flip:hover .project-flip__hint {
+.flip-card:hover .flip-card__hint {
   color: var(--color-accent);
 }
 
@@ -191,7 +188,7 @@
   transition: var(--transition);
 }
 
-.project-flip:hover .project-card__title {
+.flip-card:hover .project-card__title {
   color: var(--color-accent);
 }
 
@@ -230,8 +227,8 @@
     grid-template-columns: 1fr;
   }
 
-  .project-flip {
-    min-height: 280px;
+  .flip-card {
+    min-height: 260px;
   }
 
   .project-featured {
