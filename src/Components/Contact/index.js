@@ -13,7 +13,7 @@ export function Contact() {
       <h3 className="contact__heading">{t.contact.title}</h3>
       <p className="contact__description">{t.contact.description}</p>
       <a
-        href="mailto:kevincruzl03@gmail.com"
+        href="mailto:kevin_cruzz@outlook.es"
         className="contact__button"
       >
         {t.contact.emailLabel}
